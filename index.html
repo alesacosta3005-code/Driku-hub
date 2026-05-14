@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>morreira Script Generator | SAB SCRIPTS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">morreira</div>
+        <button class="btn-signin">Sign in</button>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Script Generator</h1>
+            <p>Configure target and options, then generate</p>
+        </div>
+
+        <div class="section-card">
+            <div class="label-group"><span class="label">TARGET</span></div>
+            <input type="text" class="search-input" placeholder="Search Roblox username...">
+        </div>
+
+        <div class="section-card">
+            <div class="label-group">
+                <span class="label">BRAINROTS</span>
+                <span style="color:var(--text-gray);font-size:0.75rem;"><span id="selected-count">0</span> selected</span>
+            </div>
+            <div class="filter-pills">
+                <div class="pill pill-og">OG (4)</div>
+                <div class="pill pill-purple">SECRET (224)</div>
+            </div>
+            <input type="text" id="search-brainrot" class="search-input" placeholder="Search brainrots..." style="margin-bottom:15px; padding:10px;">
+            <div class="tag-grid" id="brainrot-list"></div>
+        </div>
+
+        <!-- Botón de Copiar Código dentro de la web -->
+        <div class="copy-section">
+            <p style="color: #555; font-size: 0.7rem; margin-bottom: 10px;">DEVELOPER TOOLS</p>
+            <button class="btn-copy-all" id="btn-copy-code">📋 Copiar todo el código HTML</button>
+            <textarea id="source-code-display"></textarea>
+        </div>
+
+        <div style="text-align:center; padding:20px; color:#444; font-size:0.8rem;">SAB SCRIPTS • FROST HUB 2026</div>
+    </main>
+
+    <div class="generate-container">
+        <button class="btn-generate">GENERATE SCRIPT</button>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active">Inject</a>
+        <a href="#" class="nav-item">Rankings</a>
+        <a href="#" class="nav-item">Activity</a>
+        <a href="#" class="nav-item">Info</a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
